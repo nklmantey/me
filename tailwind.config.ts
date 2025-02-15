@@ -7,12 +7,24 @@ const config: Config = {
 			colors: {
 				background: 'var(--background)',
 				foreground: 'var(--foreground)',
+				tertiary: 'rgb(38 38 38 / <alpha-value>)',
+				secondary: '#aaa',
+				green: 'rgb(34 197 94 / <alpha-value>)',
 			},
 			fontFamily: {
 				montreal: 'var(--font-m)',
 				mb: 'var(--font-mb)',
 				editorial: 'var(--font-e)',
 				ei: 'var(--font-ei)',
+			},
+			animation: {
+				line: 'expandLine 0.3s ease-in-out forwards',
+			},
+			keyframes: {
+				expandLine: {
+					'0%': { width: '0%' },
+					'100%': { width: '100%' },
+				},
 			},
 		},
 	},
