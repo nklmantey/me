@@ -61,7 +61,7 @@ export function ProjectCard({ id, keyId, href, image, projectName, description, 
 					width={2560}
 					height={1440}
 					draggable={false}
-					onLoadingComplete={() => setIsImageLoading(false)}
+					onLoad={() => setIsImageLoading(false)}
 					className='z-0 h-full w-full object-cover saturate-150 select-none pointer-events-none transition-opacity duration-300'
 					style={{
 						color: 'transparent',

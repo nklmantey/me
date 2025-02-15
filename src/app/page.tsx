@@ -39,16 +39,25 @@ export default function Home() {
 						<div className='flex flex-1 flex-col justify-between gap-4'>
 							<span className='group hover:cursor-pointer text-pretty'>
 								I'm a multi-faceted{' '}
-								<AnimatedUnderline className='font-ei font-semibold tracking-wide text-base'>software engineer</AnimatedUnderline> based in
-								Ghana. When I'm not coding, I enjoy binge-watching anime or reading manga.
+								<AnimatedUnderline className='font-ei font-semibold sm:tracking-tight md:tracking-wide text-base'>
+									software engineer
+								</AnimatedUnderline>{' '}
+								based in Ghana. When I'm not coding, I enjoy binge-watching anime or reading manga.
 							</span>
 							<span className='group hover:cursor-pointer text-pretty'>
 								Experienced in driving products{' '}
-								<AnimatedUnderline className='font-ei font-semibold tracking-wide text-base'>from concept to production</AnimatedUnderline>{' '}
+								<AnimatedUnderline className='font-ei font-semibold sm:tracking-tight md:tracking-wide text-base'>
+									from concept to production
+								</AnimatedUnderline>{' '}
 								while optimizing existing solutions across{' '}
-								<AnimatedUnderline className='font-ei font-semibold tracking-wide text-base'>business</AnimatedUnderline> and{' '}
-								<AnimatedUnderline className='font-ei font-semibold tracking-wide text-base'>engineering</AnimatedUnderline> teams. I
-								contribute to open source repos too.
+								<AnimatedUnderline className='font-ei font-semibold sm:tracking-tight md:tracking-wide text-base'>
+									business
+								</AnimatedUnderline>{' '}
+								and{' '}
+								<AnimatedUnderline className='font-ei font-semibold sm:tracking-tight md:tracking-wide text-base'>
+									engineering
+								</AnimatedUnderline>{' '}
+								teams. I contribute to open source repos too.
 							</span>
 						</div>
 					</FadeIn>
