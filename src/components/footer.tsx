@@ -7,7 +7,7 @@ import { FadeIn } from '@/components/ui'
 
 export function Footer() {
 	return (
-		<div className='flex w-full justify-center border-t border-tertiary text-secondary'>
+		<div className='flex w-full justify-center border-t pb-4 border-tertiary text-secondary'>
 			<FadeIn delay={0.8} className='flex w-full max-w-screen-2xl items-center justify-between p-4'>
 				<Link prefetch className='group font-ei italic transition-all hover:text-white focus:text-white' href='/'>
 					<AnimatedUnderline>Mantey</AnimatedUnderline>

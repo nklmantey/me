@@ -104,7 +104,7 @@ export default function Home() {
 								/>
 
 								<div>
-									<span className='absolute left-[40%] top-[60%] z-10 -ml-12 -mt-12 block size-24 animate-ping rounded-full bg-green duration-1000' />
+									<span className='absolute left-[40%] top-[60%] z-10 -ml-10 -mt-10 md:-ml-12 md:-mt-12 block size-20 md:size-24 animate-ping rounded-full bg-green duration-1000' />
 									<Image
 										src='/images/me.png'
 										priority
@@ -113,7 +113,7 @@ export default function Home() {
 										width={2560}
 										height={1440}
 										draggable={false}
-										className='absolute left-[40%] top-[60%] z-10 size-20 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 select-none pointer-events-none'
+										className='absolute left-[40%] top-[60%] z-10 size-16 md:size-20 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 select-none pointer-events-none'
 									/>
 								</div>
 							</div>
