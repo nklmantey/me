@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 export default function NotFound() {
 	return (
-		<FadeIn delay={0.1} className='flex items-center justify-center w-screen min-h-screen fixed'>
-			<div className='flex flex-col gap-8 max-w-sm'>
+		<FadeIn delay={0.1} className='flex items-center justify-center w-screen min-h-screen fixed p-4'>
+			<div className='flex flex-col gap-8 w-full md:max-w-sm'>
 				<Link
 					href='/'
 					prefetch
