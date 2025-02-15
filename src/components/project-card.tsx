@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import { motion } from 'motion/react'
 import { getStars, StarCount } from '@/api'
 import { AnimatedUnderline } from './ui/animated-underline'
 
@@ -19,6 +20,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ id, keyId, href, image, projectName, description, year, tags }: ProjectCardProps) {
 	const [stars, setStars] = useState<StarCount[]>([])
+	const [isImageLoading, setIsImageLoading] = useState(true)
 	const isOpenSource = tags.includes('Open Source')
 
 	useEffect(() => {
@@ -37,7 +39,20 @@ export function ProjectCard({ id, keyId, href, image, projectName, description, 
 	return (
 		<Link prefetch href={href} target='_blank' className='group z-0 focus:outline-none mt-8'>
 			{/* PROJECT PREVIEW IMAGE */}
-			<div className='relative -z-10 aspect-video w-full bg-tertiary bg-cover bg-center'>
+			<div className='relative -z-10 aspect-video w-full bg-tertiary bg-cover bg-center overflow-hidden'>
+				{isImageLoading && (
+					<motion.div
+						className='absolute inset-0 bg-tertiary'
+						animate={{
+							opacity: [0.5, 0.8, 0.5],
+						}}
+						transition={{
+							duration: 1.5,
+							repeat: Infinity,
+							ease: 'linear',
+						}}
+					/>
+				)}
 				<Image
 					src={image}
 					priority
@@ -46,8 +61,12 @@ export function ProjectCard({ id, keyId, href, image, projectName, description, 
 					width={2560}
 					height={1440}
 					draggable={false}
-					className='z-0 h-full w-full object-cover saturate-150 select-none pointer-events-none'
-					style={{ color: 'transparent' }}
+					onLoadingComplete={() => setIsImageLoading(false)}
+					className='z-0 h-full w-full object-cover saturate-150 select-none pointer-events-none transition-opacity duration-300'
+					style={{
+						color: 'transparent',
+						opacity: isImageLoading ? 0 : 1,
+					}}
 				/>
 				<Image
 					src={image}

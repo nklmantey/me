@@ -1,4 +1,4 @@
-import { FadeIn } from '@/components/ui/fade-in'
+import { FadeIn } from '@/components/ui'
 import Image from 'next/image'
 import Link from 'next/link'
 
