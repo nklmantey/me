@@ -39,7 +39,7 @@ export function ProjectCard({ id, keyId, href, image, projectName, description, 
 	return (
 		<Link prefetch href={href} target='_blank' className='group z-0 focus:outline-none mt-8'>
 			{/* PROJECT PREVIEW IMAGE */}
-			<div className='relative -z-10 aspect-video w-full bg-tertiary bg-cover bg-center overflow-hidden'>
+			<div className='relative -z-10 aspect-video w-full bg-tertiary bg-cover bg-center'>
 				{isImageLoading && (
 					<motion.div
 						className='absolute inset-0 bg-tertiary'

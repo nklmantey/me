@@ -68,7 +68,7 @@ export default function Home() {
 					<FadeIn delay={0.3}>
 						<span className='group sm:max-w-xs lg:max-w-none text-balance'>
 							📍 Currently in{' '}
-							<Link href='https://maps.apple.com/?q=Signapore' prefetch target='_blank'>
+							<Link href='https://maps.apple.com/?q=Singapore' prefetch target='_blank'>
 								<AnimatedUnderline className='hover:cursor-pointer'>Singapore, </AnimatedUnderline>
 							</Link>
 							local time here is <LocalTime />
