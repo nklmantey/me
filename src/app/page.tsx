@@ -14,7 +14,7 @@ export default function Home() {
 					{/* NAME AND SOCIAL ICONS */}
 					<FadeIn delay={0.1}>
 						<div className='flex flex-1 flex-col justify-between gap-4'>
-							<span className='font-ei text-2xl italic text-balance'>Mantey</span>
+							<span className='font-ei text-2xl text-balance'>Mantey</span>
 
 							<div className='flex items-center gap-2'>
 								{socials.map((social) => (
