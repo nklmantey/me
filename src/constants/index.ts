@@ -29,6 +29,16 @@ export const projects = [
 	},
 	{
 		id: 1,
+		keyId: 'nimbus',
+		projectName: 'Nimbus',
+		year: '2025',
+		description: 'Lightweight desktop app for managing your AWS profiles and credentials.',
+		image: '/projects/nimbus.png',
+		href: 'https://github.com/nklmantey/nimbus',
+		tags: ['Personal'],
+	},
+	{
+		id: 2,
 		keyId: 'plunk',
 		projectName: 'Plunk',
 		year: '2025',
@@ -38,7 +48,7 @@ export const projects = [
 		tags: ['Open Source'],
 	},
 	{
-		id: 2,
+		id: 3,
 		keyId: 'twenty',
 		projectName: 'Twenty',
 		year: '2024',
@@ -48,7 +58,7 @@ export const projects = [
 		tags: ['Open Source'],
 	},
 	{
-		id: 3,
+		id: 4,
 		keyId: 'bigcapital',
 		projectName: 'Bigcapital',
 		year: '2024',
@@ -58,7 +68,7 @@ export const projects = [
 		tags: ['Open Source'],
 	},
 	{
-		id: 4,
+		id: 5,
 		keyId: 'backpack',
 		projectName: 'Backpack',
 		year: '2024',
@@ -68,7 +78,7 @@ export const projects = [
 		tags: ['Open Source'],
 	},
 	{
-		id: 5,
+		id: 6,
 		keyId: 'tapngo',
 		projectName: "Tap n' Go",
 		year: '2023',
@@ -78,7 +88,7 @@ export const projects = [
 		tags: ['Work'],
 	},
 	{
-		id: 6,
+		id: 7,
 		keyId: 'eazyed',
 		projectName: 'EazyEd',
 		year: '2023',

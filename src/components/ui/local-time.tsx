@@ -8,13 +8,13 @@ export function LocalTime() {
 
 	useEffect(() => {
 		const updateTime = () => {
-			const singaporeTime = new Date().toLocaleTimeString('en-US', {
-				timeZone: 'Asia/Singapore',
+			const time = new Date().toLocaleTimeString('en-US', {
+				timeZone: 'Africa/Accra',
 				hour: 'numeric',
 				minute: '2-digit',
 				hour12: true,
 			})
-			setTime(singaporeTime)
+			setTime(time)
 		}
 
 		updateTime()

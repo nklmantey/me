@@ -68,8 +68,8 @@ export default function Home() {
 					<FadeIn delay={0.3}>
 						<span className='group sm:max-w-xs lg:max-w-none text-balance'>
 							📍 Currently in{' '}
-							<Link href='https://maps.apple.com/?q=Singapore' prefetch target='_blank'>
-								<AnimatedUnderline className='hover:cursor-pointer'>Singapore, </AnimatedUnderline>
+							<Link href='https://maps.apple.com/?q=Ghana' prefetch target='_blank'>
+								<AnimatedUnderline className='hover:cursor-pointer'>Ghana, </AnimatedUnderline>
 							</Link>
 							local time here is <LocalTime />
 						</span>
@@ -79,10 +79,10 @@ export default function Home() {
 						<div className='group z-0 focus:outline-none'>
 							<div className='relative -z-10 aspect-video w-full bg-tertiary bg-cover bg-center'>
 								<Image
-									src='/images/singapore.png'
+									src='/images/gh.png'
 									priority
 									fetchPriority='high'
-									alt='Singapore'
+									alt='Ghana'
 									width={2560}
 									height={1440}
 									draggable={false}
@@ -91,10 +91,10 @@ export default function Home() {
 									style={{ color: 'transparent' }}
 								/>
 								<Image
-									src='/images/singapore.png'
+									src='/images/gh.png'
 									priority
 									fetchPriority='high'
-									alt='Singapore'
+									alt='Ghana'
 									width={2560}
 									height={1440}
 									draggable={false}
@@ -104,7 +104,7 @@ export default function Home() {
 								/>
 
 								<div>
-									<span className='absolute left-[40%] top-[60%] z-10 -ml-10 -mt-10 md:-ml-12 md:-mt-12 block size-20 md:size-24 animate-ping rounded-full bg-green duration-1000' />
+									<span className='absolute left-[65%] top-[20%] z-10 -ml-10 -mt-10 md:-ml-12 md:-mt-12 block size-20 md:size-24 animate-ping rounded-full bg-green duration-1000' />
 									<Image
 										src='/images/me.png'
 										priority
@@ -113,7 +113,7 @@ export default function Home() {
 										width={2560}
 										height={1440}
 										draggable={false}
-										className='absolute left-[40%] top-[60%] z-10 size-16 md:size-20 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 select-none pointer-events-none'
+										className='absolute left-[65%] top-[20%] z-10 size-16 md:size-20 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 select-none pointer-events-none'
 									/>
 								</div>
 							</div>
